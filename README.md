@@ -2,7 +2,9 @@
 
 ## Objective
 
-Implement and improve a simple Next.js application that shows local weather for York, UK using the Open‑Meteo API.
+Read throught the provided web application and identify imrpovements that can be made to the code. 
+There are two small bugs in the system to find and fix, as well as an opportunity to improve the structure of the existing code.
+The task here is relatively open ended and we'd like you to analyse the existing app and improve it how you see best. 
 
 ## What you’ll do
 
