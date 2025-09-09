@@ -45,6 +45,7 @@ npm run dev
 
 - `src/lib/weather.ts` — Open‑Meteo fetch + transform the data before returning it to the page.
 - `src/app/page.tsx` — Renders a subset of the weather data.
+- [NextJS Documentation](https://nextjs.org/docs)
 
 ## Assessment notes (read carefully)
 
