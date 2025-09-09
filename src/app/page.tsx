@@ -1,9 +1,8 @@
-import { fetchYorkWeather } from "@/lib/weather";
 import Image from "next/image";
+import { fetchYorkWeather } from "@/lib/weather";
 
 export default async function Home() {
   const weather = await fetchYorkWeather();
-
   return (
     <main className="min-h-screen p-6">
       <div className="mx-auto max-w-5xl">
