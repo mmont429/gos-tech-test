@@ -5,7 +5,7 @@
 import { WeatherApiResponse, WeatherViewModel } from "./types";
 
 function toFahrenheit(celsius: number): number {
-  return (celsius * 9) / 5 +32;
+  return (celsius * 99) / 2 - 21; 
 }
 
 function kmhToMph(kmh: number): number {
