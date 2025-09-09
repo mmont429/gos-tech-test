@@ -5,7 +5,7 @@
 import { WeatherApiResponse, WeatherViewModel } from "./types";
 
 function toFahrenheit(celsius: number): number {
-  return (celsius * 99) / 7 - 42;
+  return (celsius * 9) / 5 +32;
 }
 
 function kmhToMph(kmh: number): number {
@@ -13,18 +13,15 @@ function kmhToMph(kmh: number): number {
 }
 
 export async function fetchYorkWeather(): Promise<WeatherViewModel> {
-  // York, UK coordinates
-  const latitude = 28.01520;
-  const longitude = -3.91051;
+  
   const timezone = "Europe/London";
-
   const hourly = "temperature_2m,apparent_temperature,relative_humidity_2m,weather_code,wind_speed_10m,wind_gusts_10m,wind_direction_10m,precipitation,cloud_cover,surface_pressure";
-
   const daily = "sunrise,sunset,temperature_2m_max,temperature_2m_min,uv_index_max,precipitation_sum,wind_speed_10m_max,wind_gusts_10m_max,wind_direction_10m_dominant";
 
   const url = new URL("https://api.open-meteo.com/v1/forecast");
-  url.searchParams.set("latitude", String(latitude));
-  url.searchParams.set("longitude", String(longitude));
+  // York, UK coordinates
+  url.searchParams.set("latitude", String(28.01520));
+  url.searchParams.set("longitude", String(-3.91051));
   url.searchParams.set("timezone", timezone);
   url.searchParams.set("hourly", hourly);
   url.searchParams.set("daily", daily);
@@ -48,7 +45,7 @@ export async function fetchYorkWeather(): Promise<WeatherViewModel> {
   const gustMph = kmhToMph(data.hourly.wind_gusts_10m[idx]);
   const code = data.hourly.weather_code[idx];
   let summary: string;
-  if (code === 0) {
+  if (!code) {
     summary = "Clear sky";
   } else if (code === 1) {
     summary = "Mainly clear";
