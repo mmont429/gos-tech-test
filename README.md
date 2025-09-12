@@ -4,16 +4,15 @@
 
 Read through the provided web application and identify improvements that can be made to the code. 
 There are two small bugs in the system to find and fix, as well as opportunities to improve the structure of the existing code.
-The task here is relatively open ended and we'd like you to analyze the existing app and improve it however you see best. 
 This is deliberately a very open ended task, we are hoping that it will afford you the opportunity to showcase your skills and your thought process. If successful you may be invited to a technical review, where we will be asking you to talk through the project and any changes you made. 
 
 ## What you’ll do
 
-- Run the app and verify the weather display.
+- Run the app and verify the weather display using the provided instructions. 
 - Read through the code and understand what it is doing, be prepared to explain it.
 - Identify and fix one or more observable logic errors in the displayed data.
 - Refactor code where a function has too many responsibilities.
-- Optionally use more of the available (currently unused) data to enhance the UI.
+- Optionally use more of the available (currently unused) data to enhance the UI and add features.
 
 ## Getting started
 
@@ -51,7 +50,7 @@ npm run dev
 
 1. Logic bug
 
-- A subtle error exists in unit conversion logic. The app still runs but the displayed value is obviously wrong when compared against the source unit.
+- Two subtle errors exist in unit conversion logic. The app still runs but the displayed value is obviously wrong when compared against the source unit.
 
 2. Refactor opportunity
 
