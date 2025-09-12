@@ -59,7 +59,14 @@ npm run dev
 3. Use more data (Optional)
 
 - The TypeScript interface in `src/lib/weather.ts` models the full set of variables requested from Open‑Meteo (hourly + daily). Only a few are rendered. Consider using some additional fields. While not imperative that you complete this step, we would be interested to see how you approach it during a discussion.
-- For context here, the `_2m` at the end of `temperature_2m` stands for 2 meters above ground, not 2 minutes! 
+- For context here, the `_2m` at the end of `temperature_2m` stands for 2 meters above ground, not 2 minutes!
+
+4. Use of AI
+
+- While we feel that AI assistance should not be necessary to successfully complete this technical test, we also do not strictly forbid the use of AI. As such, we expect:
+  - You will be open and honest about using AI tooling while working on this technical test.
+  - You will be able to explain in detail the changes that the AI tooling made at your request.
+- We want you to be able to make the best use of the tools available to you, but it is imperative that you have a strong technical foundation instead of solely relying on AI assistance.
 
 ## Contract and types
 
