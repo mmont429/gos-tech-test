@@ -1,7 +1,7 @@
 # GreenhouseOS Tech Test — Next.js Weather App
 
 ## Objective
-
+test
 Read through the provided web application and identify improvements that can be made to the code. 
 There are two small bugs in the system to find and fix, as well as opportunities to improve the structure of the existing code.
 This is deliberately a very open ended task, we are hoping that it will afford you the opportunity to showcase your skills and your thought process. If successful you may be invited to a technical review, where we will be asking you to talk through the project and any changes you made. 
