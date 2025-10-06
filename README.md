@@ -32,7 +32,7 @@ Open this repository in VSCode or your preferred IDE, then in the terminal:
 npm install
 ```
 
-2. Start the dev server
+2. Start the development server
 
 ```bash
 npm run dev
